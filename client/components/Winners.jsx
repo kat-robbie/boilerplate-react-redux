@@ -3,12 +3,6 @@ import WinnerRow from './WinnerRow'
 
 function Winners () {
 
-  const winnersData = [
-    {id: 1, name: 'Aidan', score: 21},
-    {id: 2, name: 'Mix', score: 12},
-    {id: 3, name: 'Don', score: 11}
-  ]
-
   return (
     <div className='winners-section'>
       <h2>Winners</h2>
