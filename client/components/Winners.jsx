@@ -4,17 +4,17 @@ import {connect} from 'react-redux'
 import WinnerRow from './WinnerRow'
 
 function Winners (props) {
-console.log('the props', props);
-
   return (
     <div className='winner-section'>
       <h2>Winners</h2>
       <table>
-        {props.winnersData.map(winnerRecord => {
-          return (
-            <WinnerRow name={winnerRecord.name} score={winnerRecord.score} key={winnerRecord.id} />
-          )
-        })}
+        <tbody>
+          {props.winnersData.map(winnerRecord => {
+            return (
+              <WinnerRow name={winnerRecord.name} score={winnerRecord.score} key={winnerRecord.id} />
+            )
+          })}
+        </tbody>
       </table>
     </div>
   )
