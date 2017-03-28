@@ -1,3 +1,5 @@
+
+import React from 'react'
 import { connect } from 'react-redux'
 
 import Word from '../components/Word'
@@ -7,7 +9,7 @@ function Words (props) {
 
   return (
     <div>
-      {wordsList.map(wordObject => 
+      {wordsList.map(wordObject =>
         <Word key={wordObject.id} word={wordObject.word} />)
       }
     </div>
@@ -24,4 +26,3 @@ const provideCorrectProps = connect(mapStateToProps)
 const connectedWords = provideCorrectProps(Words)
 
 export default connectedWords
-
