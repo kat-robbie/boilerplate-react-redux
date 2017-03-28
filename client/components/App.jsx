@@ -1,7 +1,7 @@
 import React from 'react'
 import AddWord from '../containers/AddWord'
 import Words from '../containers/Words'
-import Winners from './Winners.jsx'
+import Winners from '../containers/Winners.jsx'
 
 function App (props) {
   return (
