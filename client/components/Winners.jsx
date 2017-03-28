@@ -1,4 +1,5 @@
 import React from 'react'
+import WinnerRow from './WinnerRow'
 
 function Winners () {
 
@@ -15,12 +16,7 @@ function Winners () {
         <tbody>
           {winnersData.map(winnerRec => {
             return (
-              <tr key={winnerRec.id}>
-                <td>{winnerRec.name}</td>
-                <td>{winnerRec.score}</td>
-                <td><button>+</button></td>
-                <td><button>-</button></td>
-              </tr>
+              <WinnerRow name={winnerRec.name} score={winnerRec.score} key={winnerRec.id}/>
             )
           })}
         </tbody>
@@ -30,3 +26,7 @@ function Winners () {
 }
 
 export default Winners
+
+// Same:
+//<WinnerRow name={winnerRec.name} score={winnerRec.score} key={winnerRec.id}/>
+//<WinnerRow {...winnerRec} key={winnerRed.id}
