@@ -26,7 +26,7 @@ function Winners () {
         <tbody>
           {winnersData.map(winnerRecord => {
             return (
-              <WinnerRow name={winnerRecord.name} score={winnerRecord.score} key={winnerRecord.id} />
+              <WinnerRow {...winnerRecord} key={winnerRecord.id} />
             )
           })
         }
