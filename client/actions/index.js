@@ -7,3 +7,9 @@ export const addWord = (word) => {
     word
   }
 }
+
+export const clearWords = () => {
+  return {
+    type: 'CLEAR_WORDS'
+  }
+}

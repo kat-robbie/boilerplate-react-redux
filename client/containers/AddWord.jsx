@@ -24,4 +24,3 @@ const provideDispatch = connect()
 const connectedAddWord = provideDispatch(AddWord)
 
 export default connectedAddWord
-

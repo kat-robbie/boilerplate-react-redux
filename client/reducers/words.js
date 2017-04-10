@@ -1,4 +1,5 @@
 const words = (state = [], action) => {
+  console.log(state, action)
   switch (action.type) {
     case 'ADD_WORD':
       const newState = [
@@ -9,6 +10,10 @@ const words = (state = [], action) => {
         }
       ]
       return newState
+
+    case 'CLEAR_WORDS':
+
+      return []
 
     default:
       return state
